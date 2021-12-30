@@ -1,5 +1,11 @@
-extends layout
+extends index-layout
+
+
+block header 
+  div(id="header" class="index-header")
+    h1(class="index-header-text")= name
 
 block content
-  h1= title
-  p Welcome to #{title}
+  script 
+    include ../public/javascripts/index.js
+  p(class="index-content") Welcome to my website!

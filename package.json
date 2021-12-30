@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serverstart": "DEBUG=* npm run devstart",
-    "devstart": "nodemon ./bin/www",
+    "devstart": "nodemon -e js,pug,css,json ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {

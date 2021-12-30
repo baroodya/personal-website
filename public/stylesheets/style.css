@@ -1,8 +1,59 @@
+/* Sitewide styles */
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* index specific styles */
+.index-header {
+  /* Background */
+  background-image: url(../images/index-background.jpg);
+
+  /* Alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Size */
+  position: fixed;
+  width: 100%;
+  height: 50%;
+  top: 0;
+
+  padding: 25px 0 25px 0;
+}
+
+.index-header-text {
+  /* Text Content */
+  font: 36px "Times New Roman", Times, serif;
+  color: whitesmoke;
+  position: relative;
+}
+
+.index-header::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.15);
+}
+
+.index-content {
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+
+  padding: 50px 25px 25px 50px;
+
+  z-index: -1;
 }
