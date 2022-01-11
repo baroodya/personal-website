@@ -1,6 +1,6 @@
 
 let windowHeightPixels = window.innerHeight;
-let startingHeaderHeight = windowHeightPixels / 2;
+let startingHeaderHeight = 3 * windowHeightPixels / 4;
 console.log(windowHeightPixels);
 
 // When the user scrolls down 50px from the top of the document, resize the header's font size
